@@ -1,15 +1,16 @@
 {
-    "name": "casahugo/php-secrets",
+    "name": "casahugo/secrets",
     "authors": [
         {
             "name": "Hugo Casabella",
             "email": "hugo.casabella@gmail.com"
         }
     ],
+    "bin": "secrets",
     "require": {
         "php": ">=7.1.25",
         "paragonie/sodium_compat": "^1.17",
-        "symfony/console": "^4.4"
+        "symfony/console": "^4|^5"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
@@ -17,7 +18,7 @@
         "friendsofphp/php-cs-fixer": "^2.18",
         "phpstan/phpstan": "^0.12.82",
         "phpunit/phpunit": "^7.5.20",
-        "symfony/dotenv": "^4.4"
+        "symfony/dotenv": "^4|^5"
     },
     "autoload": {
         "psr-4": {

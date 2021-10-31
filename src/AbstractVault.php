@@ -21,9 +21,9 @@ abstract class AbstractVault
     /** @var string|null */
     protected $lastMessage;
 
-    public function getLastMessage(): ?string
+    public function getLastMessage(): string
     {
-        return $this->lastMessage;
+        return $this->lastMessage ?? '';
     }
 
     abstract public function generateKeys(bool $override = false): bool;

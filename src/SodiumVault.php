@@ -61,7 +61,7 @@ class SodiumVault extends AbstractVault
         }
 
         if ('' !== $this->decryptionKey && !is_file($this->pathPrefix.'encrypt.public.php')) {
-            $this->export('encrypt.public', $this->encryptionKey);
+            $this->export('encrypt.public', $this->encryptionKey ?? '');
         }
 
         if (!$override && null !== $this->encryptionKey) {

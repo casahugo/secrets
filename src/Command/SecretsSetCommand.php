@@ -137,7 +137,7 @@ EOF
             $io->newLine();
         }
 
-        if ($this->vault === $vault && null !== $this->localVault->reveal($name)) {
+        if ($this->vault === $vault && null !== $this->localVault && null !== $this->localVault->reveal($name)) {
             $io->comment('Note that this secret is overridden in the local vault.');
         }
 
