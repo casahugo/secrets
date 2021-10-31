@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+    php:
+        image: webdevops/php-dev:7.1-alpine
+        working_dir: /var/www/html
+        volumes:
+           - ./:/var/www/html:cached
+        environment:
+            PHP_DISMOD: pdo_pgsql
+            PHP_DATE_TIMEZONE: Europe/Paris
+            PHP_MAX_EXECUTION_TIME: 3600
+            PHP_MEMORY_LIMIT: 256M
+            PHP_POST_MAX_SIZE: 50M
+            PHP_UPLOAD_MAX_FILESIZE: 50M
+            FPM_MAX_REQUESTS: 500
+            XDEBUG_MODE: debug
+            XDEBUG_CLIENT_HOST: localhost
+            XDEBUG_CLIENT_PORT: 9000
+            XDEBUG_START_WITH_REQUEST: "yes"
+            XDEBUG_DISCOVER_CLIENT_HOST: 1
+            COMPOSER_VERSION: 2
