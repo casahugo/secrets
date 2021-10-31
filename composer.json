@@ -1,5 +1,6 @@
 {
     "name": "casahugo/secrets",
+    "license": "MIT",
     "authors": [
         {
             "name": "Hugo Casabella",
