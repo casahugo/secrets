@@ -5,7 +5,7 @@ CLI PHP vault based on [symfony/framework-bundle](https://github.com/symfony/fra
 ## Install
 
 ```
-composer require nxpster/secrets
+composer require casahugo/secrets
 ```
 
 ### Generate Cryptographic Keys
